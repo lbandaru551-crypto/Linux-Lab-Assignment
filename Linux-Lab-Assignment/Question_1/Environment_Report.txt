@@ -1,0 +1,19 @@
+C:\Users\lband\AppData\Local\Packages\MicrosoftWindows.Client.Core_cw5n1h2txyewy\TempState\ScreenClip\{9852133B-3D61-4735-8E83-0C179EA3A875}.png==================================================
+Environment Report
+==================================================
+
+Command 1: whoami and groups
+Observation: I executed these commands to verify my Linux user account details. The output confirmed my username is lbandaru and listed the default groups associated with my workspace, granting me the necessary administrative and system access.
+
+Command 2: echo $SHELL
+Observation: I ran this to identify my current command-line interpreter. The output showed /bin/bash, which is the standard default shell for this Ubuntu environment.
+
+Command 3: pwd
+Observation: I used the print working directory command to confirm my location. The output verified I am actively working inside the Question_1 folder of my lab assignment directory.
+
+Command 4: ls -la
+Observation: I executed this to view all contents of the current directory, including hidden files. The output confirmed the successful creation of my Environment_Report.txt file and displayed its read/write permissions.
+
+Command 5: ping -c 4 google.com
+Observation: I used this command to verify external network connectivity by sending 4 ICMP echo requests. The statistics reported 0% packet loss, confirming the virtual environment has active internet access.
+

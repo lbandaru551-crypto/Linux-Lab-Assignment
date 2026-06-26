@@ -1,0 +1,18 @@
+==================================================
+Link Analysis Report
+==================================================
+
+Command 1: ln original_file.txt hard_link.txt
+Observation: I created a hard link to the original file. Both share the same inode number, meaning they point to the exact same data on the disk.
+
+Command 2: ln -s original_file.txt soft_link.txt
+Observation: I created a symbolic (soft) link. Unlike hard links, this creates a new inode that points to the filename of the original file.
+
+Command 3: rm original_file.txt
+Observation: I deleted the original file. 
+
+Command 4: cat hard_link.txt
+Observation: The hard link still displayed the file content, because hard links access the underlying data directly regardless of the original filename's existence.
+
+Command 5: cat soft_link.txt
+Observation: This command failed with "No such file or directory" because the soft link is a shortcut to a filename that no longer exists (a dangling link).

@@ -1,0 +1,18 @@
+==================================================
+Project Workspace Report
+==================================================
+
+Command 1: mkdir -p secure_workspace/project_files
+Observation: I created the necessary parent and child directories for the secure project workspace.
+
+Command 2: ls -ld secure_workspace (Before)
+Observation: I checked the default permissions, noting that read and execute permissions were granted to groups and others. 
+
+Command 3: chmod 700 secure_workspace
+Observation: I modified the permissions to 700. This protects the project data by ensuring that only the owner has read, write, and execute permissions, stripping all access from the group and other users.
+
+Command 4: ls -ld secure_workspace (After)
+Observation: I verified the change. The output confirmed the permissions are now drwx------.
+
+Command 5: umask
+Observation: I checked the default user mask. The output shows 0022, meaning new directories will default to 755 and new files to 644.

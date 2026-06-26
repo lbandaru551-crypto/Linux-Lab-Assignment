@@ -1,0 +1,15 @@
+==================================================
+Storage Assessment Report
+==================================================
+
+Command 1: lsblk
+Observation: I identified the available block storage devices attached to the system.
+
+Command 2: df -h
+Observation: I reviewed the mounted file systems and their human-readable disk usage statistics, verifying sufficient space for new application deployments.
+
+Command 3: df -i
+Observation: I checked inode utilization to ensure the file system has enough available index nodes to create new files, as running out of inodes prevents file creation even if disk space is available.
+
+Storage Health Observations & Recommendations:
+The storage resources are currently healthy with ample space and inodes available. To improve long-term storage utilization, I recommend implementing log rotation for the new application server and setting up automated monitoring alerts for when disk usage exceeds 80%.

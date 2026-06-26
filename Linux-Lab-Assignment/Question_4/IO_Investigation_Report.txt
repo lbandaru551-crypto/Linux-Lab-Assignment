@@ -1,0 +1,15 @@
+==================================================
+IO Investigation Report
+==================================================
+
+Command 1: ls -la > standard_output.txt
+Observation: I redirected the standard output of the directory listing into a text file instead of printing it to the terminal.
+
+Command 2: ls /this_folder_does_not_exist 2> error_log.txt
+Observation: I intentionally triggered an error by accessing a non-existent folder and redirected the standard error (stderr) to a log file.
+
+Command 3: ulimit -a
+Observation: I listed all current system resource limits for the shell session, including maximum open files, stack size, and CPU time.
+
+Summary:
+By using redirection operators ('>' and '2>'), I successfully separated standard program output from error diagnostics. Reviewing 'ulimit' is crucial for understanding the constraints placed on user processes by the operating system.
